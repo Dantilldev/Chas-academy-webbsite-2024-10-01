@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+/* Bg image*/
+.bg {
+  background-image: url(images/bg.webp);
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  width: 100%;
+}
+/* Header */
+header {
+  background-color: rgb(188, 182, 182, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  color: #ffffff;
+  width: 100%;
+  padding: 18px 64px 11px;
+  font-size: 1rem;
+}
+.logo {
+  max-height: 70px;
+  max-width: auto;
+  cursor: pointer;
+}
+.nav a {
+  color: #ffffff;
+  cursor: default;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.nav a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+/* Nav btn */
+.btn:hover {
+  background-color: transparent;
+  color: #4c64ff;
+  border: 1px solid #4c64ff;
+  transition: ease-in-out 0.3s;
+}
+
+.btn {
+  background-color: #4c64ff;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border: 0;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+/* Slide 1 */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  gap: 20px;
+}
+.hero h1 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 230px;
+  font-size: 100px;
+  font-weight: 550;
+  letter-spacing: 0.05px;
+  line-height: 1;
+}
+.hero-under h4 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+/* CTA btn */
+.hero-btn-section {
+  padding-top: 50px;
+}
+.hero-btn {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: #ffffff;
+  background-color: #4c64ff;
+  cursor: pointer;
+  border: 0;
+  width: 100px;
+  height: 100px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+}
+.hero-btn:hover {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: ease-in-out 0.3s;
+}
+
+/* Slide 2 */
+.about-us {
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: 100px;
+  gap: 100px;
+  width: 100%;
+  justify-items: center;
+}
+
+.intro-pic img {
+  width: auto;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-width: 600px;
+}
+.intro-text h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.intro-text h2 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+.intro-text p {
+  line-height: 1.5;
+  text-align: start;
+}
+
+/* Grid btn*/
+.grid-btn {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.left-btn,
+.right-btn {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  height: 45px;
+  width: 180px;
+}
+.right-btn {
+  background-color: #f4f4f4f4;
+  border: 1px solid #000000;
+  color: #000000;
+}
+.left-btn:hover {
+  background-color: #f4f4f4;
+  color: #000000;
+  border: 1px solid #000000;
+  transition: ease-in-out 0.4s;
+}
+.right-btn:hover {
+  background-color: #000000;
+  color: #f4f4f4;
+  transition: ease-in-out 0.4s;
+}
+
+/* Slide 3 - */
+.grid-container2 {
+  background-color: #f4f4f4;
+  width: 100%;
+  margin: 30px auto;
+}
+.grid-container2 h2 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 100px;
+}
+.grid-student {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 50px;
+  padding: 10px 150px 100px;
+}
+.student-item {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.student-item h4 {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.student-item p {
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+}
+.student-name {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+.student-item img {
+  width: 400px;
+  height: auto;
+}
+
+/* SLide 4 */
+.application {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.application h2 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  padding: 100px;
+  font-size: 4rem;
+  padding-bottom: 50px;
+}
+.application p {
+  text-align: center;
+  width: 500px;
+}
+.cta-button {
+  padding: 60px;
+  padding-bottom: 150px;
+}
+.cta-button button {
+  background-color: #4c64ff;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  cursor: pointer;
+  color: #ffffff;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+.cta-button button:hover {
+  background-color: #f4f4f4;
+  color: #000000;
+  border: 1px solid #000000;
+  transition: ease-in-out 0.3s;
+}
+/* Slide 5*/
+footer {
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+.links-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.links-1 a {
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 10px;
+}
+.links-1 a:hover {
+  color: #cdcccc;
+}
+.links-2 a:hover {
+  color: #cdcccc;
+}
+.links-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.links-2 p {
+  padding: 10px 0px;
+}
+.links-2 a {
+  color: #000000;
+}
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 400px;
+}
+#footer-logo {
+  width: auto;
+  height: 150px;
+  margin-bottom: 50px;
+}
+.footer-h3 h3 {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  word-spacing: 1px;
+}
+.follow-us .svg img {
+  height: 50px;
+  width: 50px;
+}
+/* Copy right */
+.copy-right h5 {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(188, 182, 182);
+  font-weight: 200;
+}
+/* Box shadows */
+.cta-button button,
+.student-item,
+.hero-btn,
+.btn {
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
